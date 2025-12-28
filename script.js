@@ -3423,8 +3423,6 @@ async loadData() {
         return;
       }
 
-      if (!confirm("ยืนยันการขายหรือไม่?")) return;
-
       try {
         const total = this.cart.reduce((sum, item) => sum + item.sellingPrice * item.quantity, 0);
         let profit = 0;
